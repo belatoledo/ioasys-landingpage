@@ -24,7 +24,7 @@ The challenge was to recreate a module 2 example landing page in ioasys Camp wit
 
 ### 👀 Project deploy
 
-Please acess this Netlify [link](/) for view the result. ✨
+Please acess this Netlify [link](https://focused-thompson-c9d37c.netlify.app/) for view the result. ✨
 
 ### 🔧 Techs
 
