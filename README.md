@@ -13,7 +13,7 @@
 </h4>
 
 <p align="center">
-<img src="https://c.tenor.com/xLF9p58P5_4AAAAC/cat-galaxy.gif" width="500px;" alt="Form image"/></p>
+<img src="https://github.com/belatoledo/ioasys-landingpage/blob/main/assets/github-img.png?raw=true" width="190px;" alt="Landing Page image"/></p>
 ---
 
 ### 💻 About
