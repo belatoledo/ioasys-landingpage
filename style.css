@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  background: linear-gradient(
+    54.13deg,
+    #010101 25.55%,
+    #00192f 72.7%,
+    #002c3f 106.21%
+  );
+}
+
+.header {
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-logo {
+  height: 40px;
+  padding-right: 24px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 32px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.header-menu-item {
+  font-family: "Sarala", sans-serif;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.header-menu-item:hover {
+  border-bottom: 1.5px solid #ffff;
+}
+
+.main-div {
+  margin-bottom: 48px;
+  border-top: 1.5px solid #ffff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-content-div {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-title {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  color: #ffff;
+}
+
+.main-subtitle {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #ffff;
+}
+
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e00f63;
+  width: 18rem;
+  height: 6rem;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.main-button:hover {
+  border: 3px solid #e00f63;
+  background-color: transparent;
+}
+
+.div-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-rocketman {
+  animation: move 4s ease infinite;
+}
+
+@keyframes move {
+  50% {
+    transform: translate(0px, 30px);
+  }
+}
+
+.main-image {
+  height: 370px;
+  margin-top: 50px;
+}
+
+.div-base {
+  transform: rotate(-3deg);
+  animation: rotate 4s ease infinite;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.base-image {
+  margin-left: 50px;
+  margin-top: -35px;
+  margin-bottom: 50px;
+}
+
+.secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.secondary-content-title {
+  border-top: 0.4px solid #ffff;
+  padding-top: 40px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #ffff;
+  margin-bottom: 16px;
+}
+
+.secondary-content-text {
+  font-family: "Sarala", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #ffff;
+}
+
+.secondary-content-text strong {
+  font-size: 1.8rem;
+  color: #e00f63;
+}
+
+.footer {
+  padding: 32px;
+  border-top: 0.4px solid #ffff;
+}
+
+.footer-image {
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin: 1rem auto;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 50px;
+    color: white;
+  }
+
+  .header-logo {
+    height: 30px;
+  }
+
+  #nav .active {
+    display: block;
+    position: absolute;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  #btn-mobile {
+    display: block;
+    color: #fff;
+    background: none;
+    border: none;
+  }
+
+  #btn-mobile:hover {
+    color: #e00f63;
+  }
+
+  #nav.active .header-menu {
+    display: block;
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    width: 100%;
+    background: linear-gradient(
+      54.13deg,
+      #010101 25.55%,
+      #00192f 72.7%,
+      #002c3f 106.21%
+    );
+    text-align: right;
+    z-index: 10;
+  }
+
+  .header-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-bottom: 1px solid #e00f63;
+  }
+
+  .header-menu-item a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .main-content {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .main-title {
+    text-align: center;
+    height: 500px;
+  }
+
+  .main-subtitle {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .main-button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-rocketman {
+    margin-top: -80px;
+    height: 250px;
+  }
+
+  .secondary-content {
+    margin: 0 auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .secondary-content-title {
+    text-align: center;
+  }
+}
